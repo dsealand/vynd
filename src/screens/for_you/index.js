@@ -4,7 +4,7 @@ import { ScrollView, Image, View, Text, StyleSheet } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faHashtag, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-import BottomTabNavigator from '../../components/BottomTabNavigator';
+// import BottomTabNavigator from '../../components/BottomTabNavigator';
 
 import { Container } from './styles';
 
@@ -89,7 +89,7 @@ export default function Discover({ navigation }) {
                     </View>
                 ))}
             </ScrollView>
-            <BottomTabNavigator background="#010101" colorIcon="#FFF" colorTitle="#FFF" navigation={navigation} />
+            {/* <BottomTabNavigator background="#010101" colorIcon="#FFF" colorTitle="#FFF" navigation={navigation} /> */}
         </Container>
     )
 }
