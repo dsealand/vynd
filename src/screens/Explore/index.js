@@ -8,7 +8,7 @@ import { faHashtag, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import { Container } from './styles';
 
-export default function Discover({ navigation }) {
+export default function Explore({ navigation }) {
 
     const videos = [
         { url: "https://i.pinimg.com/564x/27/b4/5c/27b45cfadb28dbd857ebd662fe3cc1fe.jpg" },

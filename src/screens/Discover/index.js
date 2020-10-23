@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { View, ScrollView, Dimensions } from 'react-native';
 
-import Video from 'react-native-video';
+import { Video } from 'expo-av';
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlus, faHeart, faCommentDots, faPlay } from '@fortawesome/free-solid-svg-icons';
 
-import BottomTabNavigator from '../../components/BottomTabNavigator';
+// import BottomTabNavigator from '../../components/BottomTabNavigator';
 
-import videos from '../../Data/Videos/videos';
+import videos from '../../Data/Videos/videos.js';
 
 import {
     styles,
@@ -31,7 +31,7 @@ import {
     ContentLeftBottomMusic
 } from './styles';
 
-export default function Home({ navigation }) {
+export default function Discover({ navigation }) {
 
     const [paused, setPaused] = useState(false);
 
@@ -47,12 +47,15 @@ export default function Home({ navigation }) {
                         key={video.id}
                         style={{ flex: 1, height: Dimensions.get("window").height, backgroundColor: '#010101' }}>
                         <Video
-                            style={styles.backgroundVideo}
                             source={video.url}
+                            rate={1.0}
+                            volume={1.0}
+                            isMuted={false}
                             resizeMode="cover"
-                            onTouchStart={() => setPaused(!paused)}
-                            paused={paused}
-                            repeat />
+                            shouldPlay
+                            isLooping
+                            style={styles.backgroundVideo}
+                        />
                         <ContentRight>
                             <ContentRightUser>
                                 <ContentRightUserImage resizeMode="contain" source={{ uri: video.user.image }} />
@@ -91,7 +94,7 @@ export default function Home({ navigation }) {
                     </View>
                 ))}
             </ScrollView>
-            <BottomTabNavigator background="transparent" colorIcon="#FFF" colorTitle="#FFF" navigation={navigation} />
+            {/* <BottomTabNavigator background="transparent" colorIcon="#FFF" colorTitle="#FFF" navigation={navigation} /> */}
         </View>
     )
 }

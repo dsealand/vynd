@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUserPlus, faEllipsisH, faChevronLeft, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import Explore from '../screens/Explore';
-import Dsicover from '../screens/Discover';
+import Discover from '../screens/Discover';
 // import Photo from '../screens/Photo';
 // import Inbox from '../screens/Inbox';
 // import Profile from '../screens/Profile';
