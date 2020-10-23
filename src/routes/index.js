@@ -6,8 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUserPlus, faEllipsisH, faChevronLeft, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import For_You from '../screens/for_you';
-// import For_you from '../screens/Discover';
+import Explore from '../screens/Explore';
+import Dsicover from '../screens/Discover';
 // import Photo from '../screens/Photo';
 // import Inbox from '../screens/Inbox';
 // import Profile from '../screens/Profile';
@@ -21,15 +21,15 @@ StatusBar.setHidden(true);
 const Routes = () => (
     <NavigationContainer onStateChange={state => state.index == 0 ? StatusBar.setHidden(true) : StatusBar.setHidden(false)}>
         <Stack.Navigator>
-            {/* <Stack.Screen
-                name="Home"
-                component={Home}
+            <Stack.Screen
+                name="Discover"
+                component={Discover}
                 options={{
                     header: () => null,
-                }} /> */}
+                }} />
             <Stack.Screen
-                name="For You"
-                component={For_You}
+                name="Explore"
+                component={Explore}
                 options={{
                     headerTitle: () => <TextInput
                         placeholder="Search"
