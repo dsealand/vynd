@@ -56,6 +56,14 @@ export default function Discover({ navigation }) {
                             isLooping
                             style={styles.backgroundVideo}
                         />
+                        <Video
+                            style={styles.backgroundVideo}
+                            source={video.url}
+                            resizeMode="cover"
+                            onTouchStart={() => setPaused(!paused)}
+                            paused={paused}
+                            repeat
+                        />
                         <ContentRight>
                             <ContentRightUser>
                                 <ContentRightUserImage resizeMode="contain" source={{ uri: video.user.image }} />

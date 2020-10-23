@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { StyleSheet, Dimensions } from "react-native";
 
 export const styles = StyleSheet.create({
-    aVideo: {
+    backgroundVideo: {
         alignItems: "stretch",
         position: "absolute",
         height: Dimensions.get("window").height,
