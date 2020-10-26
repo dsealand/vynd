@@ -1,6 +1,6 @@
 # vynd
 
-Pull updated origin/main
+Pull updated origin/main.
 
 Run `yarn install` to install all dependencies.
 
