@@ -47,7 +47,7 @@ export default function Discover({ navigation }) {
                         key={video.id}
                         style={{ flex: 1, height: Dimensions.get("window").height, backgroundColor: '#010101' }}>
                         <Video
-                            source={{ uri: "https://d2h74skj6dqe4u.cloudfront.net/PXL_20201021_215704455.cmfv" }}
+                            source={{ uri: "https://d2h74skj6dqe4u.cloudfront.net/PXL_20201021_215704455.mpd" }}
                             rate={1.0}
                             volume={1.0}
                             isMuted={false}
@@ -56,14 +56,14 @@ export default function Discover({ navigation }) {
                             isLooping
                             style={styles.backgroundVideo}
                         />
-                        <Video
+                        {/* <Video
                             style={styles.backgroundVideo}
                             source={video.url}
                             resizeMode="cover"
                             onTouchStart={() => setPaused(!paused)}
                             paused={paused}
                             repeat
-                        />
+                        /> */}
                         <ContentRight>
                             <ContentRightUser>
                                 <ContentRightUserImage resizeMode="contain" source={{ uri: video.user.image }} />
