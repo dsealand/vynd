@@ -28,6 +28,7 @@
     "react-native-svg": "^12.1.0",
     "react-native-video": "^5.1.0-alpha8",
     "react-native-web": "~0.13.12",
+    "stripe": "^8.118.0",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
