@@ -6,8 +6,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUserPlus, faEllipsisH, faChevronLeft, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-import Explore from '../screens/Explore';
-import Discover from '../screens/Discover';
+// import Explore from '../screens/Explore';
+import Discover from '../screens/Discover/discover.js';
+import Cart from '../screens/Cart/cart.js'
 // import Photo from '../screens/Photo';
 // import Inbox from '../screens/Inbox';
 // import Profile from '../screens/Profile';
@@ -22,12 +23,12 @@ const Routes = () => (
     <NavigationContainer onStateChange={state => state.index == 0 ? StatusBar.setHidden(true) : StatusBar.setHidden(false)}>
         <Stack.Navigator>
             <Stack.Screen
-                name="Discover"
-                component={Discover}
+                name="Cart"
+                component={Cart}
                 options={{
                     header: () => null,
                 }} />
-            <Stack.Screen
+            {/* <Stack.Screen
                 name="Explore"
                 component={Explore}
                 options={{
@@ -44,7 +45,7 @@ const Routes = () => (
                         }} />,
                     headerLeft: () => null,
                     headerRight: () => null,
-                }} />
+                }} /> */}
             {/* <Stack.Screen
                 name="Photo"
                 component={Photo}
