@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Routes from './src/routes'
+import Tab from './src/bottomTab/bottomTab'
 
 function App() {
   return (
-    <Routes />
+    <Tab />
   )
 }
 

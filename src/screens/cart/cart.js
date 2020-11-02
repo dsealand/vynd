@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-function discover() {
+function cart(props) {
     return (
         <View 
         style = {{flex: 1,
@@ -9,10 +9,10 @@ function discover() {
         alignItems: 'center',
         backgroundColor: '#3f403f'}}>
             <Text style = {{color: '#588157'}}>
-                Discover
+                Cart
             </Text>
         </View>
     );
 }
 
-export default discover;
+export default cart;
