@@ -8,7 +8,8 @@ import { faUserPlus, faEllipsisH, faChevronLeft, faPaperPlane } from '@fortaweso
 
 // import Explore from '../screens/Explore';
 import Discover from '../screens/Discover/discover.js';
-import Cart from '../screens/Cart/cart.js'
+import AddSubscription from '../screens/AddSubscription/addSubscription.js'
+// import Cart from '../screens/Cart/cart.js'
 // import Photo from '../screens/Photo';
 // import Inbox from '../screens/Inbox';
 // import Profile from '../screens/Profile';
@@ -23,8 +24,8 @@ const Routes = () => (
     <NavigationContainer onStateChange={state => state.index == 0 ? StatusBar.setHidden(true) : StatusBar.setHidden(false)}>
         <Stack.Navigator>
             <Stack.Screen
-                name="Cart"
-                component={Cart}
+                name="AddSubscription"
+                component={AddSubscription}
                 options={{
                     header: () => null,
                 }} />
