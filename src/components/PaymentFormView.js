@@ -2,7 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { CreditCardInput } from 'react-native-credit-card-input';
 import { FontAwesome } from '@expo/vector-icons';/**
- * Renders the payment form and handles the credit card data
+
+* Renders the payment form and handles the credit card data
  * using the CreditCardInput component.
  */
 export default class PaymentFormView extends React.Component {
