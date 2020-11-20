@@ -47,7 +47,7 @@ export default function Discover({ navigation }) {
                         key={video.id}
                         style={{ flex: 1, height: Dimensions.get("window").height, backgroundColor: '#010101' }}>
                         <Video
-                            source={{ uri: "https://d2h74skj6dqe4u.cloudfront.net/PXL_20201021_215704455.mpd" }}
+                            source={{ uri: "http://d2h74skj6dqe4u.cloudfront.net/videos/PXL_20201021_215704455.cmfv" }}
                             rate={1.0}
                             volume={1.0}
                             isMuted={false}

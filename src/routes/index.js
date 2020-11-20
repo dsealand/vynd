@@ -24,8 +24,8 @@ const Routes = () => (
     <NavigationContainer onStateChange={state => state.index == 0 ? StatusBar.setHidden(true) : StatusBar.setHidden(false)}>
         <Stack.Navigator>
             <Stack.Screen
-                name="AddSubscription"
-                component={AddSubscription}
+                name="Discover"
+                component={Discover}
                 options={{
                     header: () => null,
                 }} />
